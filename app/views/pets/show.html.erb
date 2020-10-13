@@ -1,0 +1,7 @@
+<h2><%= @pet.name %></h2>
+<h3><%= @pet.species %></h3>
+<p>Found at: <%= @pet.found_on %></p>
+
+<%= link_to "Destroy #{@pet.name}", pet_path(@pet), method: :delete, data: { confirm: "are you sure?"} %>
+
+<%= link_to "back to list", pets_path %>
